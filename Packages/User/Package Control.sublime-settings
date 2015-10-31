@@ -1,0 +1,26 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"DocBlockr",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"Handlebars",
+		"Javascript Beautify",
+		"Markdown Slideshow",
+		"Material Theme",
+		"Package Control",
+		"SassBeautify",
+		"SCSS",
+		"SideBarEnhancements",
+		"Tag",
+		"Theme - Flatland"
+	]
+}
