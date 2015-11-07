@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"Babel",
 		"BracketHighlighter",
 		"Color Highlighter",
 		"DocBlockr",
@@ -17,6 +18,7 @@
 		"Markdown Slideshow",
 		"Material Theme",
 		"Package Control",
+		"ReactJS",
 		"SassBeautify",
 		"SCSS",
 		"SideBarEnhancements",

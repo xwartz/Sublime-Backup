@@ -10,7 +10,9 @@
 		"*.min.*",
 		"bower_components/*",
 		"template/*.js",
-		"chromeApp/*"
+		"chromeApp/*",
+		".sass-cache/*",
+		"tests/*"
 	],
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
