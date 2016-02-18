@@ -14,15 +14,19 @@
 		"Git",
 		"GitGutter",
 		"Handlebars",
-		"Javascript Beautify",
-		"Markdown Slideshow",
+		"HTMLBeautify",
+		"JsFormat",
+		"JSHint Gutter",
+		"MarkdownEditing",
 		"Material Theme",
 		"Package Control",
 		"ReactJS",
 		"SassBeautify",
 		"SCSS",
 		"SideBarEnhancements",
+		"SublimeLinter-contrib-eslint",
 		"Tag",
-		"Theme - Flatland"
+		"Theme - Flatland",
+		"Vue Syntax Highlight"
 	]
 }
