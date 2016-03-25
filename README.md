@@ -21,23 +21,22 @@ https://packagecontrol.io/docs/syncing
 	"binary_file_patterns":
 	[
 		"node_modules/*",
-		"dist/*",
 		"deploy/*",
 		"build/*",
 		"dest/*",
 		"*.log",
 		"*.min.*",
 		"bower_components/*",
+		"template/*.js",
 		"chromeApp/*",
 		".sass-cache/*",
-		"tests/*",
-		"social/*"
+		"dist/*"
 	],
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
 	"draw_centered": true,
 	"enable_tab_scrolling": false,
-	"ensure_newline_at_eof_on_save": true,
+	"ensure_newline_at_eof_on_save": false,
 	"folder_exclude_patterns":
 	[
 	],
@@ -46,7 +45,7 @@ https://packagecontrol.io/docs/syncing
 	[
 		"gray_antialias"
 	],
-	"font_size": 17,
+	"font_size": 18,
 	"gutter": true,
 	"highlight_line": true,
 	"ignored_packages":
@@ -54,32 +53,21 @@ https://packagecontrol.io/docs/syncing
 		"Markdown",
 		"Vintage"
 	],
-	"indent_guide_options":
-	[
-		"draw_normal",
-		"draw_active"
-	],
 	"line_numbers": true,
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
-	"material_theme_accent_lime": true,
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"material_theme_accent_yellow": true,
 	"material_theme_bold_tab": true,
-	"material_theme_compact_sidebar": true,
-	"material_theme_contrast_mode": true,
 	"material_theme_small_statusbar": true,
-	"material_theme_tabs_autowidth": true,
-	"material_theme_tabs_separator": true,
 	"overlay_scroll_bars": "enabled",
-	"remember_full_screen": true,
 	"scroll_past_end": true,
 	"show_encoding": true,
 	"show_full_path": true,
-	"spell_check": true,
 	"tab_size": 2,
 	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"word_wrap": true
+	"trim_trailing_white_space_on_save": false,
+	"word_wrap": false
 }
 
 ```
@@ -100,6 +88,51 @@ https://packagecontrol.io/docs/syncing
   { "keys": ["super+ctrl+o"], "command": "reveal_in_side_bar" },
   { "keys": ["ctrl+r"], "command": "side_bar_rename" }, //rename file
   { "keys": ["ctrl+shift+m"], "command": "side_bar_move" }, //move file
+  {
+  "keys": ["tab"], 
+  "command": "expand_abbreviation_by_tab", 
+  // put comma-separated syntax selectors for which 
+  // you want to expandEmmet abbreviations into "operand" key 
+  // instead of SCOPE_SELECTOR.
+  // Examples: source.js, text.html - source
+  "context": [
+    {
+      "operand": "meta.group.braces.round.js, text.html", 
+      "operator": "equal", 
+      "match_all": true, 
+      "key": "selector"
+    }, 
+
+    // run only if there's no selected text
+    {
+      "match_all": true, 
+      "key": "selection_empty"
+    },
+
+    // don't work if there are active tabstops
+    {
+      "operator": "equal", 
+      "operand": false, 
+      "match_all": true, 
+      "key": "has_next_field"
+    }, 
+
+    // don't work if completion popup is visible and you
+    // want to insert completion with Tab. If you want to
+    // expand Emmet with Tab even if popup is visible -- 
+    // remove this section
+    {
+      "operand": false, 
+      "operator": "equal", 
+      "match_all": true, 
+      "key": "auto_complete_visible"
+    }, 
+    {
+      "match_all": true, 
+      "key": "is_abbreviation"
+    }
+  ]
+}
 ]
 ```
 
