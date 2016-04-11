@@ -1,0 +1,59 @@
+{
+  "always_show_minimap_viewport": true,
+  "binary_file_patterns":
+  [
+    "node_modules/*",
+    "deploy/*",
+    "build/*",
+    "dest/*",
+    "*.log",
+    "*.min.*",
+    "bower_components/*",
+    "template/*.js",
+    "chromeApp/*",
+    ".sass-cache/*",
+    "dist/*"
+  ],
+  "bold_folder_labels": true,
+  "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+  "draw_centered": true,
+  "draw_white_space": "all",
+  "enable_tab_scrolling": false,
+  "ensure_newline_at_eof_on_save": true,
+  "fallback_encoding": "UTF-8",
+  "folder_exclude_patterns":
+  [
+  ],
+  "font_face": "Hack",
+  "font_options":
+  [
+    "gray_antialias"
+  ],
+  "font_size": 18,
+  "gutter": true,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "Markdown",
+    "Vintage"
+  ],
+  "line_numbers": true,
+  "line_padding_bottom": 2,
+  "line_padding_top": 2,
+  "material_theme_accent_yellow": true,
+  "material_theme_bold_tab": true,
+  "material_theme_small_statusbar": true,
+  "overlay_scroll_bars": "enabled",
+  "rulers":
+  [
+    80
+  ],
+  "scroll_past_end": true,
+  "show_encoding": true,
+  "show_full_path": true,
+  "tab_size": 2,
+  "theme": "Material-Theme-Darker.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "word_wrap": false
+}
