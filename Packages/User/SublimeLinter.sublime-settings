@@ -12,10 +12,11 @@
                 "args": [],
                 "excludes": []
             },
-            "jshint": {
-                "@disable": true,
+            "json": {
+                "@disable": false,
                 "args": [],
-                "excludes": []
+                "excludes": [],
+                "strict": true
             }
         },
         "mark_style": "outline",
