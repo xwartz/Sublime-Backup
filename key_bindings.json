@@ -8,6 +8,7 @@
       }
     ]
   },
+  {"keys": ["ctrl+shift+h"], "command": "fix_eslint"},
   { "keys": ["super+alt+down"], "command": "goto_definition" },
   { "keys": ["super+ctrl+o"], "command": "reveal_in_side_bar" },
   { "keys": ["ctrl+r"], "command": "side_bar_rename" }, //rename file

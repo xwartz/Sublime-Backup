@@ -15,7 +15,7 @@
 		"dist/*"
 	],
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"color_scheme": "Packages/User/Material-Theme-Darker (Flake8Lint).tmTheme",
 	"draw_centered": true,
 	"draw_white_space": "all",
 	"enable_tab_scrolling": false,
